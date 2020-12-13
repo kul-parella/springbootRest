@@ -14,17 +14,25 @@ repositories {
 }
 
 dependencies {
+
+	implementation 'org.jsonschema2pojo:jsonschema2pojo-gradle-plugin:latest.integration'
+
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	//implementation group:'com.kafka.example', name: 'kafka_demo' , version: '0.0.1-SNAPSHOT'
-	
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+
 }
 
 test {

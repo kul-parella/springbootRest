@@ -1,3 +1,5 @@
 rootProject.name = project_name 
 
 include 'api'
+include 'api'
+

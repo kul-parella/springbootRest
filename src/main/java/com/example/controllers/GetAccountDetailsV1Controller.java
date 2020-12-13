@@ -1,5 +1,6 @@
 package com.example.controllers;
 
+import com.example.entity.GetAccountDetailsV1Response;
 import com.example.entity.GetAccountV1Request;
 import com.example.services.GetAccountDetailsV1Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class GetAccountDetailsV1Controller {
 
 
     @PostMapping(value = "/api/getAccountDetails")
-    public ResponseEntity getAccountDetails(
+    public ResponseEntity<GetAccountDetailsV1Response> getAccountDetails(
             @Valid @RequestBody final GetAccountV1Request request,
             @RequestHeader final HttpHeaders headers
             ){
