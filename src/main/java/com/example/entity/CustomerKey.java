@@ -11,7 +11,7 @@ import javax.validation.constraints.Pattern;
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-        "cutomerNumber",
+        "customerNumber",
         "companyNumber"
 })
 public class CustomerKey {

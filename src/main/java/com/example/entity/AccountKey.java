@@ -17,7 +17,7 @@ import javax.validation.constraints.Pattern;
 @JsonPropertyOrder({
         "accountNumber",
         "companyNumber",
-        "hoganProductCode"
+        "productCode"
 })
 public class AccountKey {
 

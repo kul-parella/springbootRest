@@ -24,12 +24,13 @@ public class GetAccountDetailsV1Controller {
     }
 
 
-
     @PostMapping(value = "/api/getAccountDetails")
     public ResponseEntity<GetAccountDetailsV1Response> getAccountDetails(
-            @Valid @RequestBody final GetAccountV1Request request,
+            @Valid
+            @RequestBody final GetAccountV1Request request,
             @RequestHeader final HttpHeaders headers
             ){
+            System.out.println("Request obj :: ----> "+request.toString());
             return service.getAccountDetails(request);
 
     }

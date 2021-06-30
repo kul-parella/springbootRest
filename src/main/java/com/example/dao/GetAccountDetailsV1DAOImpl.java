@@ -16,6 +16,7 @@ public class GetAccountDetailsV1DAOImpl implements GetAccountDetailsV1DAO {
 
         AccountDetails acctDetails = new AccountDetails();
         acctDetails.setAcctCoNum("1234567890");
+        acctDetails.setCustCoNum("1234567890");
         acctDetails.setAcctNum("8989098765678987");
         acctDetails.setAcctPrdCd("XCC");
         acctDetails.setCustEcn("12345");
@@ -25,6 +26,7 @@ public class GetAccountDetailsV1DAOImpl implements GetAccountDetailsV1DAO {
 
         AccountDetails acctDetails1 = new AccountDetails();
         acctDetails1.setAcctCoNum("1234567890");
+        acctDetails.setCustCoNum("1234567890");
         acctDetails1.setAcctNum("8989098765678987");
         acctDetails1.setAcctPrdCd("XCC");
         acctDetails1.setCustEcn("12345");
