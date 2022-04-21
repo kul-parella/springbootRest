@@ -2,3 +2,14 @@
 server:
   port: 8080
   servlet.context-path: /myrestapp
+
+
+service :
+  threadpool:
+    corepoolsize: ${/threadpool/corepoolsize:3}
+    maxpoolsize:  ${/threadpool/maxpoolsize:10}
+  scheduler:
+    delay: ${/demoscheduler/delay:30000}
+    frequency: ${/demoscheduler/frequency:60000}
+  directory:
+    loadLocation: C:\\Users\\mods r us 580\\Documents\\load
