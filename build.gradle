@@ -27,6 +27,11 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	// https://projectlombok.org
+	compileOnly 'org.projectlombok:lombok:1.18.4'
+	annotationProcessor 'org.projectlombok:lombok:1.18.4'
+	
 	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'

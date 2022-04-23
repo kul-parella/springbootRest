@@ -24,7 +24,7 @@ public class DemoFileProcessService {
         }
 
 
-        return CompletableFuture.completedFuture("waited for 2 mins ");
+        return CompletableFuture.completedFuture("waited for 1.5 mins ");
 
      }
 }
