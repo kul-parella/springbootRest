@@ -13,3 +13,6 @@ service :
     frequency: ${/demoscheduler/frequency:60000}
   directory:
     loadLocation: C:\\Users\\mods r us 580\\Documents\\load
+
+workspace:
+  configDir: C:\\Users\\mods r us 580\\Documents\\configs
